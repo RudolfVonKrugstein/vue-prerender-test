@@ -8,11 +8,14 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import { Component } from 'vue-property-decorator'
+import Vue from "vue";
 
-export default {
-  name: 'Home',
+@Component({
   components: {
     HelloWorld
   }
+})
+export default class App extends Vue {
 }
 </script>
